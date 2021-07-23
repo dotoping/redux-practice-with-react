@@ -17,3 +17,13 @@
 .comments>div {
   border: 1px solid #333;
 }
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem
+}
+
+.users>div {
+  border: 1px solid #888;
+}

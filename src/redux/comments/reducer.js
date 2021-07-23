@@ -1,5 +1,5 @@
 import {
-    FETCH_COMMENTS, FETCH_COMMENTS_REQUEST, FETCH_COMMENTS_SUCCESS, FETCH_COMMENTS_FAILURE
+    FETCH_COMMENTS_REQUEST, FETCH_COMMENTS_SUCCESS, FETCH_COMMENTS_FAILURE
 }
     from './types'
 
@@ -26,7 +26,7 @@ const commentsReducer = (state = initialState, action) => {
             return {
                 ...state,
                 loading: false,
-                err: action.error
+                err: action.payload
             }
         default: return state;
     }
