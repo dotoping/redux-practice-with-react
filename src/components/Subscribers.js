@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addSubscriber } from '../redux/subscribers/actions'
+import { addSubscriber } from '../redux/index'
 
 const Subscribers = ({ count, addSubscriber }) => {
     return (
@@ -11,9 +11,9 @@ const Subscribers = ({ count, addSubscriber }) => {
     )
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ subscribers }) => {
     return {
-        count: state.count
+        count: subscribers.count
     }
 }
 
