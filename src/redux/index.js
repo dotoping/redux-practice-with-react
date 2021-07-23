@@ -1,2 +1,3 @@
-export { addSubscriber, removeSubscriber } from '../redux/subscribers/actions'
-export { addView } from '../redux/views/actions'
+export { addSubscriber, removeSubscriber } from './subscribers/actions'
+export { addView } from './views/actions'
+export { fetchComments } from './comments/actions'
