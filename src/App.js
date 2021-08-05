@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import Subscribers from './components/Subscribers';
 import store from './redux/store';
 import Display from './components/Display';
-// import Views from './components/Views';
 import Comments from './components/Comments';
 import Users from './components/Users';
 
